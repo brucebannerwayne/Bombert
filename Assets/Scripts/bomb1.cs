@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//bomb control script for player 2
 public class bomb1 : MonoBehaviour {
     public GameObject prefab;
     public int bombs;

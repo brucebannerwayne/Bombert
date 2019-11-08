@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//count how much area has player 1 painted
 public class Count : MonoBehaviour {
     public int Player1Count = 0;
 

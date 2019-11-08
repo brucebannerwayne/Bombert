@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Script used to add number of bombs player can set at the same time
 public class bomb_num : MonoBehaviour {
 
 	// Use this for initialization

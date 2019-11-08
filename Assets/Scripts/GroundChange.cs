@@ -23,7 +23,7 @@ public class GroundChange : MonoBehaviour {
     //    //}
     //    //}
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)//paint the floor when the bomb explode
     {
         if (collision.gameObject.tag == "fire")
         {

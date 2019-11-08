@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//make the player unable to go through the bomb
 public class bombcollider : MonoBehaviour {
 
 	// Use this for initialization

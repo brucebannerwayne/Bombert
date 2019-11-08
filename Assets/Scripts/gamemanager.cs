@@ -33,7 +33,7 @@ public class gamemanager : MonoBehaviour
     // public GameObject reset;
 
     // Use this for initialization
-    IEnumerator SpawnWaves()
+    IEnumerator SpawnWaves()//spawn the collectable items randomly on the map
     {
         yield return new WaitForSeconds(startWait);
         while (true)
@@ -66,7 +66,7 @@ public class gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //预先添加一个数字后面就会执行几次
+        //test whether the game is end
         if (int.Parse(countdowntext.text) == 0)
         {
             countdownpic.gameObject.GetComponent<CanvasGroup>().alpha = 0;
@@ -112,7 +112,7 @@ public class gamemanager : MonoBehaviour
             //if (Input.GetKeyDown(KeyCode.Space))
             //    SceneManager.LoadScene(0);
         }
-        if (link.GetComponent<link_hp>().hp <= 0)
+        if (link.GetComponent<link_hp>().hp <= 0)//respawn the player when he is killed by the bomb
         {
             //gameover.GetComponent<CanvasGroup>().alpha = 1;
             isdead = true;

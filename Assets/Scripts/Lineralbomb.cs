@@ -13,7 +13,7 @@ public class Lineralbomb : MonoBehaviour {
 	void Update () {
 		
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)//the function of collectable item Lineral bomb
     {
         if (collision.gameObject.name == "Link_0")
         {

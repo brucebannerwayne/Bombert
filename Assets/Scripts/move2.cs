@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// player2's movement control
 public class move2 : MonoBehaviour
 {
     public Vector3 playerposition;

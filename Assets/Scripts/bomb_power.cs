@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//increase the blast range of the bomb
 public class bomb_power : MonoBehaviour
 {
 

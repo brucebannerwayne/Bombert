@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//player movement control
 public class move : MonoBehaviour {
     public Vector3 playerposition;
     public float speed;
@@ -29,7 +29,7 @@ public class move : MonoBehaviour {
 
         if (h != 0)
             v = 0;
-        if(transform.position == playerposition)
+        if(transform.position == playerposition)//move the player if the destination is allowed to stand
         {
             if (h > 0)
             {
@@ -74,7 +74,7 @@ public class move : MonoBehaviour {
         
 
 
-        if(Input.GetKeyDown(KeyCode.Space)&&bomb_num>0)
+        if(Input.GetKeyDown(KeyCode.Space)&&bomb_num>0)//set bomb
         {
             //Mathf.RoundToInt(
             if (hasLineral = true && lineralBomb > 0)

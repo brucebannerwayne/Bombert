@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//make player1 moves slower when he walks on the area painted by the enemy
 public class Debuff1 : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D collision)
     {

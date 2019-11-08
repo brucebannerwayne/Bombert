@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//script used to control bomb
 public class bomb : MonoBehaviour {
     //private float destroytime = 0f;
     public GameObject prefab;
@@ -22,7 +22,7 @@ public class bomb : MonoBehaviour {
 
     void Explode()
     {
-        if (GameObject.Find("Link_0").GetComponent<move>().setLineral == true)
+        if (GameObject.Find("Link_0").GetComponent<move>().setLineral == true)//activate the lineral bomb
         {
             bombs = GameObject.Find("Link_0").GetComponent<move>().bomb_power;
             bombs += 15;
@@ -39,7 +39,7 @@ public class bomb : MonoBehaviour {
             GameObject.Find("Main Camera").GetComponent<ScreenShake>().isshakeCamera = true;
         }
    
-        else if (GameObject.Find("Link_0").GetComponent<move>().setLineral == false)
+        else if (GameObject.Find("Link_0").GetComponent<move>().setLineral == false)//create normal bomb
         {
             bombs = GameObject.Find("Link_0").GetComponent<move>().bomb_power;
             Instantiate(prefab, transform.position, transform.rotation);
@@ -55,7 +55,7 @@ public class bomb : MonoBehaviour {
         }
     }
 
-    IEnumerator CreateExplosion(Vector3 dir)
+    IEnumerator CreateExplosion(Vector3 dir)//count down for the explosion
     {
         for(int i=1; i<bombs;i++)
         {
